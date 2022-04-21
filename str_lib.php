@@ -1,18 +1,19 @@
 <?php
 
 include 'index.php';
+/*Fonction str_len = Calculer la taille d'une string*/
 
 
+function fn_strlen($str){
 
-function strg_len($str){
-$count = 1;
-
-    for ($i = 0; $i < $str.length; $i++) {
-        if ($str[i] == "") {
-            $count++;
+    if ($str != null) {
+        $i = 0;
+        
+        while ($str[$i]!= "") {
+            $i++;
         }
+        return $i;
     }
 }
-echo (strg_len("salut"));
-
+echo fn_strlen('chaîne de caractère')
 ?>
